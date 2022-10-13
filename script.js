@@ -1,3 +1,3 @@
-'use strict';
+"use strict";
 
-console.log('I love JS');
+console.log(document.querySelector(".message"));

@@ -26,7 +26,10 @@ document.querySelector(".check").addEventListener("click", function () {
     // When player wins
   } else if (guess === secretNumber) {
     document.querySelector(".message").textContent = "Correct Number";
-    //When input is too low
+
+    document.querySelector(".body").style.backgroundColor = "60b347";
+    document.querySelector(".number").style.width = "30rem";
+    //When input is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
       document.querySelector(".message").textContent = "Too High..";
